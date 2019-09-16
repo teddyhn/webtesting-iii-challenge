@@ -8,6 +8,6 @@ import Display from './Display';
   
 test('defaults to unlocked and open', () => {
     const { getByText } = render(<Display />);
-    expect(getByText('Unlocked'));
-    expect(getByText('Open'));
+    getByText('Unlocked');
+    getByText('Open');
 });
